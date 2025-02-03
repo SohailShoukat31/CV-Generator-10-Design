@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CV Generator</h1>
+    <div class="design-options">
+      <label for="design-select">Choose a Design:</label>
+      <select id="design-select">
+        <option value="1">Design 1</option>
+        <option value="2">Design 2</option>
+        <option value="3">Design 3</option>
+        <option value="4">Design 4</option>
+        <option value="5">Design 5</option>
+        <option value="6">Design 6</option>
+        <option value="7">Design 7</option>
+        <option value="8">Design 8</option>
+        <option value="9">Design 9</option>
+        <option value="10">Design 10</option>
+      </select>
+    </div>
+    <form id="cv-form">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <textarea id="summary" placeholder="Professional Summary" required></textarea>
+      <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+      <input type="text" id="education" placeholder="Education (e.g., BSc Computer Science)" required>
+      <input type="text" id="experience" placeholder="Work Experience (e.g., Software Engineer at XYZ)" required>
+      <input type="text" id="projects" placeholder="Projects (comma separated)" required>
+      <input type="text" id="certifications" placeholder="Certifications (comma separated)" required>
+      <button type="submit">Generate CV</button>
+    </form>
+    <div id="cv-output" class="cv-output"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
